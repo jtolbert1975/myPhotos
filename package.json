@@ -1,0 +1,24 @@
+{
+  "name": "myphotos",
+  "version": "1.0.0",
+  "description": "Test Photo Album using AngularJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtolbert1975/myPhotos.git"
+  },
+  "author": "Jonathan Tolbert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtolbert1975/myPhotos/issues"
+  },
+  "homepage": "https://github.com/jtolbert1975/myPhotos#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.4.0",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
+}

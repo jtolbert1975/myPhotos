@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Photos</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js.map"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!--<script type="text/javascript" src="controllers/userctrl.js"></script>-->
+    <script type="text/javascript" src="controllers/photoscontroller.js"></script>
+    <script type="text/javascript" src="controllers/albumcontroller.js"></script>
+
+    <!--<script type="text/javascript" src="services/users.js"></script>-->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body ng-app="myPhotos">
+<div class="container">
+    <div class="content-container">
+        <h3>Members List</h3>
+        <div class="users" ng-controller="usersCtrl">
+            <div class="users-list" ng-repeat="user in users"><a href="#" ng-click="getAlbum(user.id);">{{user.username}}</a></div>
+
+        </div>
+    </div>
+</div>
+<!--<div class="album-container" ng-show="showAlbum">
+    <div class="albums" ng-controller="albumCtrl">
+        <div class="album-list" ng-repeat="album in albums">{{album.title}}</div>
+    </div>
+</div>-->
+
+<!--<div class="photos-container" ng-show="showThumbs">
+    <div class="photos" ng-controller="photosCtrl">
+      <div class="photos-list" ng-repeat="photo in photos"><img src="{{photo.thumbnailUrl}}" /></div>
+
+    </div>
+</div>-->
+
+</body>
+</html>
